@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 sudo apt update && sudo apt upgrade -y && sudo apt install apt-transport-https ca-certificates -y
 sudo hostnamectl set-hostname acs.local
-sudo sed -i "s/127.0.1.1 ubuntu/`hostname -I` acs.local/g" /etc/hosts
+sudo sed -i "s/^127\.0\.1\.1.*/$(hostname -I | awk '{print $1}') acs.local acs/" /etc/hosts
 echo 'deb http://download.cloudstack.org/ubuntu noble 4.20' | sudo tee /etc/apt/sources.list.d/cloudstack.list
 wget -O - http://download.cloudstack.org/release.asc | sudo tee /etc/apt/trusted.gpg.d/cloudstack.asc
 sudo apt update && sudo apt install cloudstack-management -y
