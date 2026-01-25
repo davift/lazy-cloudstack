@@ -1,28 +1,30 @@
 # Lazy CloudStack
 
-Quick deployments of Apache CloudStack 4.20 on Ubuntu 24.04 LTS for local tests.
+Quick deployment of Apache CloudStack 4.20 on Ubuntu and Docker for local testing.
 
-There is also an upgrade path from 4.20 to 4.22.
+There is also an upgrade script for version 4.22, required due to a bug that prevented direct deployment of the latest version.
 
-# Ubuntu 24.04 LTS - ACS Fresh Install
+# Ubuntu 24.04 LTS
+
+## ACS Fresh Install
 
 ```bash
 curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-install.sh | sudo bash
 ```
 
-# Ubuntu 24.04 LTS - ACS Nuke
+## ACS Nuke
 
 ```bash
 curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-nuke.sh | sudo bash
 ```
 
-# Ubuntu 24.04 LTS - ACS Pave
+## ACS Pave
 
 ```bash
 curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-pave.sh | sudo bash
 ```
 
-# Ubuntu 24.04 LTS - ACS Upgrade to 4.22
+## ACS Upgrade to 4.22
 
 ```bash
 curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-up-4.22.sh | sudo bash
@@ -30,9 +32,30 @@ curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main
 
 # Docker Container
 
+## ACS Build
+
 ```bash
 docker build -t lazy-cloudstack .
+```
+
+## ACS Run
+
+```bash
 docker run --rm -d --name acs.local --hostname acs.local --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw -p 8080:8080 -p 8250:8250 --cgroupns=host lazy-cloudstack
+```
+
+## ACS Live Logs
+
+```bash
 docker exec -it acs.local tail -n 200 -f /var/log/cloudstack/management/management-server.log
 ```
+
+# Troubleshooting
+
+- Static IP requirement
+  - It is strongly recommended to assign a static IP address to the instance where ACS is installed. If the IP changes, ACS will not fail gracefully, because the newly assigned IP will not match the address stored in its database.
+
+- Running ACS in containers (LXC / Docker)
+  - Although ACS can run inside LXC or Docker, the hostname is typically managed by the container runtime. This can prevent ACS from starting correctly.
+  - To avoid this issue, ensure that the hostname resolves to the network IP address, not the loopback address, by adjusting /etc/hosts.
 
