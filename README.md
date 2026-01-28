@@ -59,4 +59,6 @@ docker exec -it acs.local tail -n 200 -f /var/log/cloudstack/management/manageme
   - Although ACS can run inside LXC or Docker, the hostname is typically managed by the container runtime. This can prevent ACS from starting correctly.
   - To avoid this issue, ensure that the hostname resolves to the network IP address, not the loopback address, by adjusting /etc/hosts.
 
-ps -p 1 -o comm=
+- The `Dockerfile` on the root of the repository build a container that runs `systemd` and that is why it needs to be privileged.
+  - Inside the container, check what is the process number 1: `ps -p 1 -o comm=`
+  - If it returns anything other that `systemd`, like `bash` for example, it is not working.
