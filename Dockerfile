@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV container docker
@@ -15,10 +15,10 @@ RUN apt update && apt install -y \
     lsb-release \
     sudo \
     net-tools \
+    iputils-ping \
     iproute2 \
-    mysql-server \
-    bash && \
-    apt-get clean
+    mysql-server && \
+    apt clean -y
 
 RUN echo "deb http://download.cloudstack.org/ubuntu noble 4.20" | tee /etc/apt/sources.list.d/cloudstack.list && \
     wget -O /etc/apt/trusted.gpg.d/cloudstack.asc http://download.cloudstack.org/release.asc && \
@@ -40,7 +40,8 @@ RUN service mysql start && sleep 5 && \
     mysql -e "CREATE USER IF NOT EXISTS 'cloud'@'localhost' IDENTIFIED BY 'dft.wiki';" && \
     mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'cloud'@'localhost';" && \
     cloudstack-setup-databases cloud:dft.wiki@localhost --schema-only && \
-    cloudstack-setup-management
+    cloudstack-setup-management && \
+    systemctl mask openipmi.service
 
 RUN systemctl enable mysql
 RUN systemctl enable cloudstack-management
