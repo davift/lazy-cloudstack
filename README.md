@@ -35,13 +35,13 @@ curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main
 ## ACS Build
 
 ```bash
-docker build -t lazy-cloudstack .
+docker build -t lazy-cloudstack:u22.04 .
 ```
 
 ## ACS Run
 
 ```bash
-docker run --rm -d --name acs.local --hostname acs.local --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw -p 8080:8080 -p 8250:8250 --cgroupns=host lazy-cloudstack
+docker run --rm -d --name acs.local --hostname acs.local --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw -p 8080:8080 -p 8250:8250 --cgroupns=host lazy-cloudstack:u22.04
 ```
 
 ## ACS Live Logs
@@ -59,3 +59,4 @@ docker exec -it acs.local tail -n 200 -f /var/log/cloudstack/management/manageme
   - Although ACS can run inside LXC or Docker, the hostname is typically managed by the container runtime. This can prevent ACS from starting correctly.
   - To avoid this issue, ensure that the hostname resolves to the network IP address, not the loopback address, by adjusting /etc/hosts.
 
+ps -p 1 -o comm=
