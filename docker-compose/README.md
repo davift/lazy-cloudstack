@@ -8,7 +8,7 @@
 docker compose up --build
 ```
 
-## ACS Shutdown Persisting DB
+## ACS Shutdown Preserving DB
 
 ```bash
 docker compose down
