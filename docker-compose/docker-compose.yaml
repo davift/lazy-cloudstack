@@ -1,0 +1,46 @@
+services:
+  acs-db:
+    image: mysql:8.0
+    container_name: acs-db
+    networks:
+      - acs-net
+    environment:
+      MYSQL_ROOT_PASSWORD: dft.wiki
+    volumes:
+      - acs-db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  acs.local:
+    build:
+      context: .
+      dockerfile: Dockerfile.acs
+    image: acs.local
+    container_name: acs.local
+    restart: unless-stopped
+    volumes:
+      - ./entry-point.sh:/entry-point.sh
+    networks:
+      - acs-net
+    depends_on:
+      acs-db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+      - "8250:8250"
+    environment:
+      - DB_HOST=acs-db
+
+volumes:
+  acs-db_data:
+
+networks:
+  acs-net:
+    driver: bridge
+
+
+

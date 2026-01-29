@@ -1,0 +1,33 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    container=docker \
+    HOSTNAME=acs.local \
+    LANG=en_US.UTF-8 \
+    LANGUAGE=en_US:en \
+    DB_HOST=acs-db
+
+RUN apt update && apt install -y \
+    apt-transport-https \
+    ca-certificates \
+    openssh-client \
+    nano \
+    curl \
+    wget \
+    gnupg \
+    lsb-release \
+    sudo \
+    net-tools \
+    iputils-ping \
+    iproute2 \
+    rsyslog && \
+    apt clean -y && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN echo "deb http://download.cloudstack.org/ubuntu noble 4.20" | tee /etc/apt/sources.list.d/cloudstack.list && \
+    wget -O /etc/apt/trusted.gpg.d/cloudstack.asc http://download.cloudstack.org/release.asc && \
+    apt update && apt install -y cloudstack-management
+
+EXPOSE 8080 8250
+
+CMD ["/entry-point.sh"]
