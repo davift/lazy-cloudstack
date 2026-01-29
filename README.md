@@ -4,7 +4,7 @@ Quick deployment of Apache CloudStack 4.20 on Ubuntu and Docker for local testin
 
 There is also an upgrade script for version 4.22, required due to a bug that prevented direct deployment of the latest version.
 
-# Ubuntu 24.04 LTS
+# On Ubuntu 24.04
 
 ## ACS Fresh Install
 
@@ -30,18 +30,18 @@ curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main
 curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-up-4.22.sh | sudo bash
 ```
 
-# Docker Container
+# On Docker
 
 ## ACS Build
 
 ```bash
-docker build -t lazy-cloudstack:u22.04 .
+docker build -t lazy-cloudstack:4.20 .
 ```
 
 ## ACS Run
 
 ```bash
-docker run --rm -d --name acs.local --hostname acs.local --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw -p 8080:8080 -p 8250:8250 --cgroupns=host lazy-cloudstack:u22.04
+docker run --rm -d --name acs.local --hostname acs.local --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw -p 8080:8080 -p 8250:8250 --cgroupns=host lazy-cloudstack:4.20
 ```
 
 ## ACS Live Logs
