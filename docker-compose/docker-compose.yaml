@@ -19,7 +19,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.acs
-    image: acs.local
+    image: acs.local:4.20
     container_name: acs.local
     restart: unless-stopped
     volumes:
