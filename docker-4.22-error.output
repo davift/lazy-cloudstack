@@ -1,0 +1,351 @@
+2026-01-29 12:35:53,776 INFO  [o.a.c.ServerDaemon] (main:[]) (logid:) Server configuration file found: /etc/cloudstack/management/server.properties
+2026-01-29 12:35:53,779 DEBUG [c.c.u.c.EncryptionSecretKeyChecker] (main:[]) (logid:) Encryption Type: null
+2026-01-29 12:35:53,782 INFO  [o.a.c.ServerDaemon] (main:[]) (logid:) Initializing server daemon on null, with http.enable=true, http.port=8080, https.enable=false, https.port=8443, context.path=/client
+2026-01-29 12:36:01,249 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [bootstrap] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/bootstrap/spring-bootstrap-context.xml]
+2026-01-29 12:36:01,249 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [bootstrap] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/bootstrap/spring-bootstrap-context-inheritable.xml]
+2026-01-29 12:36:01,350 DEBUG [c.c.u.c.EncryptionSecretKeyChecker] (main:[]) (logid:) Encryption Type: none
+2026-01-29 12:36:01,375 INFO  [c.c.u.LogUtils] (main:[]) (logid:) log4j configuration found at /etc/cloudstack/management/log4j-cloud.xml
+2026-01-29 12:36:01,379 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loaded module context [bootstrap] in 127 ms
+2026-01-29 12:36:01,380 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy: bootstrap
+2026-01-29 12:36:01,380 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:   system
+2026-01-29 12:36:01,380 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:     core
+2026-01-29 12:36:01,381 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       allocator
+2026-01-29 12:36:01,381 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         host-allocator-random
+2026-01-29 12:36:01,381 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         planner
+2026-01-29 12:36:01,381 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           api-planner
+2026-01-29 12:36:01,381 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           baremetal-planner
+2026-01-29 12:36:01,381 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           explicit-dedication
+2026-01-29 12:36:01,381 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           external-planner
+2026-01-29 12:36:01,382 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           host-affinity
+2026-01-29 12:36:01,382 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           host-anti-affinity
+2026-01-29 12:36:01,382 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           implicit-dedication
+2026-01-29 12:36:01,382 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           non-strict-host-affinity
+2026-01-29 12:36:01,382 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           non-strict-host-anti-affinity
+2026-01-29 12:36:01,382 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-planner
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           skip-heurestics
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           user-concentrated-pod
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         server-allocator
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       api
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         acl-dynamic-role-based
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         acl-project-role-based
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         acl-static-role-based
+2026-01-29 12:36:01,383 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         cloudian
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         ldap
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         maintenance
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         md5
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         metrics
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         oauth2
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         pbkdf2
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         plaintext
+2026-01-29 12:36:01,384 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         prometheus
+2026-01-29 12:36:01,385 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         quota
+2026-01-29 12:36:01,385 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         rate-limit
+2026-01-29 12:36:01,385 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         saml2
+2026-01-29 12:36:01,385 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         server-api
+2026-01-29 12:36:01,385 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         sha256salted
+2026-01-29 12:36:01,385 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         solidfire-intg-test
+2026-01-29 12:36:01,385 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         staticpin
+2026-01-29 12:36:01,386 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         totp
+2026-01-29 12:36:01,386 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         vmware-sioc
+2026-01-29 12:36:01,386 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       api-config
+2026-01-29 12:36:01,386 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       backend
+2026-01-29 12:36:01,386 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         backup
+2026-01-29 12:36:01,386 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           dummy-backup
+2026-01-29 12:36:01,386 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           nas
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           networker
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           veeam
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         ca
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           root-ca
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         compute
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           baremetal-compute
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           external-compute
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           hyperv-compute
+2026-01-29 12:36:01,387 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           kubernetes
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:             kubernetes-service
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           kvm-compute
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-alert-adapter-compute
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-compute
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-fencer
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-investigator
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           vmware-compute
+2026-01-29 12:36:01,388 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           xenserver-compute
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         network
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           baremetal-network
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           bigswitch
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           cisco-vnmc
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           contrail
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           elb
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           globodns
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           netris
+2026-01-29 12:36:01,389 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           netscaler
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           nsx
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           nvp
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           opendaylight
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           ovs
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           paloalto
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-network
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           ssp
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           tungsten
+2026-01-29 12:36:01,390 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           vcs
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           vmware-network
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           vxlan
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         server-alert-adapter-backend
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         storage
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           baremetal-storage
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           external-storage
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-alert-adapter-storage
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-storage
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           server-template-adapter
+2026-01-29 12:36:01,391 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           sharedfs-provider-storagevm
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-allocator
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-image-default
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-image-s3
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-image-swift
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-object-ceph
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-object-cloudian
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-object-minio
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-object-simulator
+2026-01-29 12:36:01,392 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-cloudbyte
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-datera
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-default
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-flasharray
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-linstor
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-primera
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-scaleio
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-solidfire
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           storage-volume-storpool
+2026-01-29 12:36:01,393 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:           vmware-storage
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       cluster
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         balanced
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         condensed
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       discoverer
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         baremetal-discoverer
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         external-discoverer
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         hyperv-discoverer
+2026-01-29 12:36:01,394 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         secondary-storage-discoverer
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         server-discoverer
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         vmware-discoverer
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         xenserver-discoverer
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       event
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         webhook
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:       outofbandmanagement
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         ipmitool
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         nested-cloudstack
+2026-01-29 12:36:01,395 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Module Hierarchy:         redfish
+2026-01-29 12:36:01,396 DEBUG [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Could not find module [bootstrap] context as they have no parents.
+2026-01-29 12:36:01,396 DEBUG [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Trying to obtain module [system] context.
+2026-01-29 12:36:01,396 DEBUG [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Trying to load module [system] context.
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-core-system-context.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-framework-config-system-context.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-framework-db-system-context.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-server-system-context.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-engine-schema-system-checkers-context.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-core-system-context-inheritable.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-framework-config-system-context-inheritable.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/system/spring-contrail-system-context-inheritable.xml]
+2026-01-29 12:36:01,397 INFO  [o.a.c.s.m.m.i.DefaultModuleDefinitionSet] (main:[]) (logid:) Loading module context [system] from URL [jar:file:/usr/share/cloudstack-management/lib/cloudstack-4.22.0.0.jar!/META-INF/cloudstack/bootstrap/spring-bootstrap-context-inheritable.xml]
+2026-01-29 12:36:01,955 DEBUG [c.c.u.d.DbProperties] (main:[]) (logid:) DB properties were already loaded
+2026-01-29 12:36:01,956 INFO  [c.c.u.d.T.Transaction] (main:[]) (logid:) Is Data Base High Availiability enabled? Ans : false
+2026-01-29 12:36:01,956 INFO  [c.c.u.d.T.Transaction] (main:[]) (logid:) Using the following URI to connect to cloud database [jdbc:mysql://localhost:3306/cloud?autoReconnect=true&prepStmtCacheSize=517&cachePrepStmts=true&sessionVariables=sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'&serverTimezone=UTC&scrollTolerantForwardOnly=true].
+2026-01-29 12:36:01,960 DEBUG [c.c.u.d.DriverLoader] (main:[]) (logid:) Successfully loaded DB driver com.mysql.cj.jdbc.Driver
+2026-01-29 12:36:01,960 DEBUG [c.c.u.d.T.Transaction] (main:[]) (logid:) Creating datasource for database: cloud with connection pool lib: hikaricp
+2026-01-29 12:36:07,299 DEBUG [c.c.u.d.T.Transaction] (main:[]) (logid:) Creating default datasource for database: cloud with connection pool lib: hikaricp
+2026-01-29 12:36:07,304 DEBUG [c.c.u.d.T.Transaction] (main:[]) (logid:) Creating default datasource for database: cloud_usage with connection pool lib: hikaricp
+2026-01-29 12:36:07,306 DEBUG [c.c.u.d.T.Transaction] (main:[]) (logid:) Creating default datasource for database: simulator with connection pool lib: hikaricp
+2026-01-29 12:36:07,308 WARN  [c.c.u.d.T.Transaction] (main:[]) (logid:) Unable to load db configuration, using defaults with 5 connections. Falling back on assumed datasource on localhost:3306 using username:password=cloud:cloud. Please check your configuration com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:584)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at com.cloud.utils.db.TransactionLegacy.createHikaricpDataSource(TransactionLegacy.java:1325)
+	at com.cloud.utils.db.TransactionLegacy.createDataSource(TransactionLegacy.java:1279)
+	at com.cloud.utils.db.TransactionLegacy.initDataSource(TransactionLegacy.java:1106)
+	at com.cloud.utils.db.TransactionLegacy.<clinit>(TransactionLegacy.java:1025)
+	at com.cloud.utils.db.Merovingian2.<init>(Merovingian2.java:69)
+	at com.cloud.utils.db.Merovingian2.createLockController(Merovingian2.java:89)
+	at com.cloud.server.LockControllerListener.<init>(LockControllerListener.java:33)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.loadContext(DefaultModuleDefinitionSet.java:174)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet$2.with(DefaultModuleDefinitionSet.java:143)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.withModule(DefaultModuleDefinitionSet.java:274)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.withModule(DefaultModuleDefinitionSet.java:279)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.withModule(DefaultModuleDefinitionSet.java:262)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.loadContexts(DefaultModuleDefinitionSet.java:131)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.load(DefaultModuleDefinitionSet.java:79)
+	at org.apache.cloudstack.spring.module.factory.ModuleBasedContextFactory.loadModules(ModuleBasedContextFactory.java:37)
+	at org.apache.cloudstack.spring.module.factory.CloudStackSpringContext.init(CloudStackSpringContext.java:71)
+	at org.apache.cloudstack.spring.module.factory.CloudStackSpringContext.<init>(CloudStackSpringContext.java:58)
+	at org.apache.cloudstack.spring.module.factory.CloudStackSpringContext.<init>(CloudStackSpringContext.java:62)
+	at org.apache.cloudstack.spring.module.web.CloudStackContextLoaderListener.contextInitialized(CloudStackContextLoaderListener.java:53)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:1073)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:572)
+	at org.eclipse.jetty.server.handler.ContextHandler.contextInitialized(ContextHandler.java:1002)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:765)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:916)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:426)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.apache.cloudstack.ServerDaemon.start(ServerDaemon.java:213)
+	at org.apache.cloudstack.ServerDaemon.main(ServerDaemon.java:121)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:98)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:90)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:64)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:74)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:895)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:820)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	... 69 more
+Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'cloud'@'localhost' (using password: YES)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:128)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:849)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:771)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:739)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:156)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:468)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:839)
+	... 78 more
+
+2026-01-29 12:36:08,356 ERROR [c.c.u.d.Merovingian2] (main:[]) (logid:) Unable to get a new db connection java.sql.SQLTransientConnectionException: cloud - Connection is not available, request timed out after 1001ms (total=0, active=0, idle=0, waiting=0)
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:686)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:144)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at com.cloud.utils.db.TransactionLegacy.getStandaloneConnectionWithException(TransactionLegacy.java:219)
+	at com.cloud.utils.db.Merovingian2.<init>(Merovingian2.java:69)
+	at com.cloud.utils.db.Merovingian2.createLockController(Merovingian2.java:89)
+	at com.cloud.server.LockControllerListener.<init>(LockControllerListener.java:33)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.loadContext(DefaultModuleDefinitionSet.java:174)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet$2.with(DefaultModuleDefinitionSet.java:143)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.withModule(DefaultModuleDefinitionSet.java:274)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.withModule(DefaultModuleDefinitionSet.java:279)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.withModule(DefaultModuleDefinitionSet.java:262)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.loadContexts(DefaultModuleDefinitionSet.java:131)
+	at org.apache.cloudstack.spring.module.model.impl.DefaultModuleDefinitionSet.load(DefaultModuleDefinitionSet.java:79)
+	at org.apache.cloudstack.spring.module.factory.ModuleBasedContextFactory.loadModules(ModuleBasedContextFactory.java:37)
+	at org.apache.cloudstack.spring.module.factory.CloudStackSpringContext.init(CloudStackSpringContext.java:71)
+	at org.apache.cloudstack.spring.module.factory.CloudStackSpringContext.<init>(CloudStackSpringContext.java:58)
+	at org.apache.cloudstack.spring.module.factory.CloudStackSpringContext.<init>(CloudStackSpringContext.java:62)
+	at org.apache.cloudstack.spring.module.web.CloudStackContextLoaderListener.contextInitialized(CloudStackContextLoaderListener.java:53)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:1073)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:572)
+	at org.eclipse.jetty.server.handler.ContextHandler.contextInitialized(ContextHandler.java:1002)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:765)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:916)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:426)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.apache.cloudstack.ServerDaemon.start(ServerDaemon.java:213)
+	at org.apache.cloudstack.ServerDaemon.main(ServerDaemon.java:121)
+Caused by: java.sql.SQLException: Access denied for user 'cloud'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
