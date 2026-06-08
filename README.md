@@ -1,33 +1,31 @@
 # Lazy CloudStack
 
-Quick deployment of Apache CloudStack 4.20 on Ubuntu and Docker for local testing.
+Quick deployment of Apache CloudStack 4.20 on any Ubuntu LTS or Docker for local testing.
 
 There is also an upgrade script for version 4.22, required due to a bug that prevented direct deployment of the latest version.
-
-# On Ubuntu 24.04
 
 ## ACS Fresh Install
 
 ```bash
-curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-install.sh | sudo bash
+curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/auto-install.sh | sudo bash
 ```
 
 ## ACS Nuke
 
 ```bash
-curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-nuke.sh | sudo bash
+curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/auto-nuke.sh | sudo bash
 ```
 
 ## ACS Pave
 
 ```bash
-curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-pave.sh | sudo bash
+curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/auto-pave.sh | sudo bash
 ```
 
 ## ACS Upgrade to 4.22
 
 ```bash
-curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/u24-up-4.22.sh | sudo bash
+curl -s https://raw.githubusercontent.com/davift/lazy-cloudstack/refs/heads/main/auto-upgrade.sh | sudo bash
 ```
 
 # On Docker
